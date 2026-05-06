@@ -5624,3 +5624,31 @@ select.form-select option {
 .zoom-hover:hover {
     transform: scale(1.12);
 }
+/* ===== Fix logo mobile Discipline Athletic ===== */
+
+.ak-site_branding {
+  display: flex;
+  align-items: center;
+  max-width: 180px;
+  overflow: visible;
+}
+
+.ak-site_branding img {
+  width: auto;
+  max-width: 160px;
+  max-height: 45px;
+  object-fit: contain;
+}
+
+@media screen and (max-width: 575px) {
+  .ak-site_branding {
+    max-width: 135px;
+    overflow: visible;
+  }
+
+  .ak-site_branding img {
+    max-width: 135px;
+    max-height: 38px;
+    object-fit: contain;
+  }
+}
