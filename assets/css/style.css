@@ -5664,3 +5664,20 @@ select.form-select option {
     max-width: 135px !important;
   }
 }
+
+/* ===== Fix hero title on mobile ===== */
+
+@media screen and (max-width: 575px) {
+  .ak-hero.ak-style2 .hero-content-2 .hero-stroke-text .hero-stroke-text-one {
+    font-size: 72px;
+    line-height: 90%;
+  }
+
+  .ak-hero.ak-style2 .hero-content-2 .hero-stroke-text .hero-stroke-text-two {
+    font-size: 48px;
+  }
+
+  .ak-hero.ak-style2 .hero-content-2 .hero-stroke-text .hero-title-three {
+    font-size: 36px;
+  }
+}
