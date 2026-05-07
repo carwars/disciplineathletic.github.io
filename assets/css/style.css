@@ -5775,7 +5775,10 @@ select.form-select option {
     display: flex;
     align-items: center;
     gap: 18px;
-    margin-top: 42px;
+
+    margin-top: 8px;
+    margin-bottom: 0px;
+
     max-width: 760px;
 }
 
