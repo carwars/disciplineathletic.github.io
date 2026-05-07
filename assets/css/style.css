@@ -5709,3 +5709,54 @@ select.form-select option {
     overflow-wrap: break-word;
   }
 }
+/* ===== Video placeholder modal ===== */
+
+.video-placeholder-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 999999;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+  background: rgba(0, 0, 0, 0.9);
+}
+
+.video-placeholder-modal.active {
+  display: flex;
+}
+
+.video-placeholder-modal img {
+  max-width: 90vw;
+  max-height: 85vh;
+  object-fit: contain;
+  box-shadow: 0 0 40px rgba(246, 122, 69, 0.35);
+}
+
+.video-placeholder-close {
+  position: fixed;
+  top: 25px;
+  right: 35px;
+  z-index: 1000000;
+  border: none;
+  background: transparent;
+  color: #ffffff;
+  font-size: 52px;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.video-placeholder-close:hover {
+  color: #f67a45;
+}
+
+.video-placeholder-button {
+  border: none;
+  background: transparent;
+  padding: 0;
+  cursor: pointer;
+}
+
+.video-placeholder-button:focus {
+  outline: none;
+}

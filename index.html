@@ -1051,7 +1051,7 @@ The focus is on structure, consistency, and realistic long-term habits.</p>
     <!-- End  Schedule-->
 
 
-<!-- Start Testimonial-->
+<!-- Start Testimonial -->
 <div class="ak-height-135 ak-height-lg-80"></div>
 
 <section class="container">
@@ -1089,6 +1089,7 @@ The focus is on structure, consistency, and realistic long-term habits.</p>
                                 <div class="video-btn">
                                     <div class="d-flex gap-2 align-items-center">
 
+                                        <!-- YOUTUBE VIDEO DISABLED TEMPORARILY
                                         <a href="https://www.youtube.com/watch?v=xmS_YP3ut6A"
                                             class="ak-video-block ak-style1 ak-video-open type_2">
 
@@ -1097,6 +1098,17 @@ The focus is on structure, consistency, and realistic long-term habits.</p>
                                             </span>
 
                                         </a>
+                                        -->
+
+                                        <button type="button"
+                                            class="ak-video-block ak-style1 type_2 video-placeholder-button"
+                                            onclick="openVideoPlaceholder()">
+
+                                            <span class="ak-heartbeat-btn">
+                                                <span></span>
+                                            </span>
+
+                                        </button>
 
                                         <p class="ak-secondary-font ak-font-18">
                                             Video training approach
@@ -1135,6 +1147,7 @@ The focus is on structure, consistency, and realistic long-term habits.</p>
                                 <div class="video-btn">
                                     <div class="d-flex gap-2 align-items-center">
 
+                                        <!-- YOUTUBE VIDEO DISABLED TEMPORARILY
                                         <a href="https://www.youtube.com/watch?v=9Z4roV9UOAA"
                                             class="ak-video-block ak-style1 ak-video-open type_2">
 
@@ -1143,6 +1156,17 @@ The focus is on structure, consistency, and realistic long-term habits.</p>
                                             </span>
 
                                         </a>
+                                        -->
+
+                                        <button type="button"
+                                            class="ak-video-block ak-style1 type_2 video-placeholder-button"
+                                            onclick="openVideoPlaceholder()">
+
+                                            <span class="ak-heartbeat-btn">
+                                                <span></span>
+                                            </span>
+
+                                        </button>
 
                                         <p class="ak-secondary-font ak-font-18">
                                             Video nutrition approach
@@ -1168,7 +1192,31 @@ The focus is on structure, consistency, and realistic long-term habits.</p>
         </div>
     </div>
 </section>
-<!-- End Testimonial-->
+<!-- End Testimonial -->
+
+<!-- Video placeholder popup -->
+<div id="videoPlaceholderModal" class="video-placeholder-modal">
+    <button class="video-placeholder-close" type="button" aria-label="Close popup" onclick="closeVideoPlaceholder()">×</button>
+
+    <img src="assets/img/videoinprogress.png" alt="Video in progress">
+</div>
+
+<script>
+function openVideoPlaceholder() {
+    document.getElementById('videoPlaceholderModal').classList.add('active');
+}
+
+function closeVideoPlaceholder() {
+    document.getElementById('videoPlaceholderModal').classList.remove('active');
+}
+
+document.getElementById('videoPlaceholderModal').addEventListener('click', function(event) {
+    if (event.target === this) {
+        closeVideoPlaceholder();
+    }
+});
+</script>
+
 
     <!-- Start Partner Client -->
     <div class="ak-height-135 ak-height-lg-80"></div>
