@@ -5760,3 +5760,13 @@ select.form-select option {
 .video-placeholder-button:focus {
   outline: none;
 }
+
+/* Services cards keep hover effect but normal cursor */
+
+.services-img-content {
+  cursor: default !important;
+}
+
+.services-img-content:hover {
+  cursor: default !important;
+}
