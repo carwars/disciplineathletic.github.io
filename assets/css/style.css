@@ -5684,12 +5684,11 @@ select.form-select option {
     overflow: hidden;
   }
 
-  .ak-hero.ak-style2 .hero-content-2 .hero-stroke-text .hero-stroke-text-one {
-    font-size: 48px !important;
+ .ak-hero.ak-style2 .hero-content-2 .hero-stroke-text .hero-stroke-text-one {
+    font-size: 46px !important;
     line-height: 0.9;
-    max-width: 100%;
-    white-space: normal;
-  }
+    letter-spacing: -1px;
+}
 
   .ak-hero.ak-style2 .hero-content-2 .hero-stroke-text .hero-stroke-text-two {
     font-size: 48px !important;
