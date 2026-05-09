@@ -5805,7 +5805,7 @@ select.form-select option {
 @media screen and (max-width: 767px) {
   .ak-hero.ak-style2 .ak-hero-bg {
     object-fit: cover;
-    object-position: 65% center;
+    object-position: 75% center;
     opacity: 0.75;
   }
 
