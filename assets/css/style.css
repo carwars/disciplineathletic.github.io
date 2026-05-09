@@ -5830,12 +5830,12 @@ select.form-select option {
 /* ===== SLIDE 2 ===== */
 
 .ak-hero.ak-style2 .hero-bg-2{
-    width: 135% !important;
+    width: 150% !important;
 
     left: auto !important;
-    right: -78% !important;
+    right: -55% !important;
 
-    object-position: 86% center !important;
+    object-position: 100% center !important;
 
     opacity: 0.55;
 }
