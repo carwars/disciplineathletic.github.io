@@ -5800,30 +5800,37 @@ select.form-select option {
     font-weight: 700;
 }
 
-/* ===== Hero mobile image positioning ===== */
-
 @media screen and (max-width: 767px) {
-  .ak-hero.ak-style2 .ak-hero-bg {
+
+  .ak-hero.ak-style2 .ak-hero-bg{
     object-fit: cover;
-    object-position: 88% center;
-    opacity: 1;
+    object-position: 92% center;
   }
 
-  .ak-hero.ak-style2::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(
-      90deg,
-      rgba(0, 0, 0, 0.82) 0%,
-      rgba(0, 0, 0, 0.58) 48%,
-      rgba(0, 0, 0, 0.08) 100%
-    );
-    z-index: 1;
-    pointer-events: none;
+  .hero-premium-note{
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-top: 24px;
+    max-width: 320px;
   }
 
-  .ak-hero.ak-style2 .hero-content-2 {
-    z-index: 2;
+  .hero-premium-note span{
+    width: 4px;
+    height: 64px;
+    background: #ffffff;
+    flex-shrink: 0;
+    box-shadow: 0 0 14px rgba(255,255,255,0.35);
   }
+
+  .hero-premium-note p{
+    margin: 0;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #f67a45;
+    font-weight: 700;
+  }
+
 }
