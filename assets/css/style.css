@@ -5799,3 +5799,31 @@ select.form-select option {
     color: #f67a45;
     font-weight: 700;
 }
+
+/* ===== Hero mobile image positioning ===== */
+
+@media screen and (max-width: 767px) {
+  .ak-hero.ak-style2 .ak-hero-bg {
+    object-fit: cover;
+    object-position: 65% center;
+    opacity: 0.75;
+  }
+
+  .ak-hero.ak-style2::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 0.88) 0%,
+      rgba(0, 0, 0, 0.72) 48%,
+      rgba(0, 0, 0, 0.25) 100%
+    );
+    z-index: 1;
+    pointer-events: none;
+  }
+
+  .ak-hero.ak-style2 .hero-content-2 {
+    z-index: 2;
+  }
+}
